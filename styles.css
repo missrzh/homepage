@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .fv {
@@ -81,27 +82,43 @@ body {
     text-decoration-line: underline;
 }
 
+
 .contact-info__sub-header {
     color: var(--secondary-text-color);
     margin-bottom: 30px;
 }
 
+
 .contact-info__block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
 }
 
-.contact-info__block--center {
-    justify-content: center;
+
+.contact-info__block--center { 
+    align-items: center;
+    align-self: center;
 }
+
 
 .contact-info__item {
     color: var(--secondary-text-color);
     text-decoration: none;
     display: flex;
     justify-content: start;
+    
 }
+.contact-info__item--end {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+}
+
 
 .contact-info__item:not(:last-child) {
     margin-bottom: 20px;
@@ -173,6 +190,7 @@ body {
     color: var(--secondary-text-color);
     text-align: justify;
 }
+
 /* Experience & additional info */
 .experiences {
     flex: 1 1 60%;
