@@ -13,8 +13,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #00b1f77c;
+    --text-decoration-color: #00b1f7;
 }
 
 .container {
@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .fv {
@@ -81,27 +82,43 @@ body {
     text-decoration-line: underline;
 }
 
+
 .contact-info__sub-header {
     color: var(--secondary-text-color);
     margin-bottom: 30px;
 }
 
+
 .contact-info__block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
 }
 
-.contact-info__block--center {
-    justify-content: center;
+
+.contact-info__block--center { 
+    align-items: center;
+    align-self: center;
 }
+
 
 .contact-info__item {
     color: var(--secondary-text-color);
     text-decoration: none;
     display: flex;
     justify-content: start;
+    
 }
+.contact-info__item--end {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+}
+
 
 .contact-info__item:not(:last-child) {
     margin-bottom: 20px;
@@ -166,8 +183,14 @@ body {
 
 .skills__text {
     color: var(--secondary-text-color);
+    text-align: center;
+}
+.skills__list{
+    margin-top: 10px;
+    color: var(--secondary-text-color);
     text-align: justify;
 }
+
 /* Experience & additional info */
 .experiences {
     flex: 1 1 60%;
@@ -261,4 +284,29 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+/* Examples */
+.examples__header {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.examples__text {
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+.examples__list-wrapper{
+    text-align: center;
+}
+.examples__link{
+    font-size: 20px;
+    color: var(--text-decoration-color);
+    text-decoration: none;
+}
+.examples__link:hover{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-decoration-color);
+    text-decoration: none;
 }
