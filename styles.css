@@ -198,9 +198,6 @@ body {
     color: var(--secondary-text-color);
     text-align: justify;
 }
-.skills__info-for-skill-margin{
-    margin-top: 20px;
-}
 
 /* Experience & additional info */
 .experiences {
