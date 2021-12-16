@@ -68,6 +68,10 @@ body {
     .experiences {
         margin-right: 0;
     }
+    .contact-info__item--end {
+        justify-content: start !important;
+    }
+   
 }
 /* Contact info */
 .contact-info__header,
@@ -121,6 +125,10 @@ body {
 
 
 .contact-info__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contact-info__item--end:not(:last-child) {
     margin-bottom: 20px;
 }
 
