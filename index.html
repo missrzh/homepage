@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/e8a3d4cb98.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -103,52 +104,70 @@
                         <div class="fh skills__list">
                             <div class="fv">
 
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('I\'ve started learning HTML, CSS a long time ago, when I attended school. As a kid in a long trips I took my notes and created website templates writing tags and styles on paper. Then when I returned home, I\'ve tried my templates on laptop and fixed mistakes. Therefore i may say that with HTML & CSS I\'m in touch for 8 years.' )"
+                                    onmouseout="erase()">
                                     <i class="fab fa-css3-alt"></i>
                                     css
                                 </div>
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('I\'ve started learning HTML, CSS a long time ago, when I attended school. As a kid in a long trips I took my notes and created website templates writing tags and styles on paper. Then when I returned home, I\'ve tried my templates on laptop and fixed mistakes. Therefore i may say that with HTML & CSS I\'m in touch for 8 years.' )"
+                                    onmouseout="erase()">
                                     <i class="fab fa-html5"></i>
                                     html
                                 </div>
                             </div>
                             <div class="fv">
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('Acquaintance with js began much more later than with HTM/CSS. I\'ve bought my first js tutorial book only at first year of university and this event completely changed my vision of web design.')"
+                                    onmouseout="erase()">
                                     <i class="fab fa-js"></i>
                                     js
                                 </div>
 
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('Node.js acknoledging began when I got the first freelance order for website (Something like crypto exchanger). I\'ve enrolled Node.js basic course at Udemy. Right after I\'ve gained basics I finished project and began to selfstudy Node. In hope of improving my skills i tried to enroll your js fullstack course.')"
+                                    onmouseout="erase()">
                                     <i class="fab fa-node-js"></i>
                                     Node.js
                                 </div>
                             </div>
                             <div class="fv">
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('My first programming language. At the university first preogramming language was Python, nowadays I feel myself most confident in Python. When I have any problem to solve first of all I think solvimg it with Python. I\'ve tried so many labraries but the most useful and intersting for me are OpenCV, NumPy and SciPy')"
+                                    onmouseout="erase()">
                                     <i class="fab fa-python"></i>
                                     Python
                                 </div>
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('Pretty new Language for me. First time we met at the beginning of 2021. I had mobile programming on swift course at university. Because I don\'t have Mac I\'ve chosen Flutter instead of swift. It wasn\'t a mistake! I loved it at first sight. Now I\'m pretty confident in Flutter')"
+                                    onmouseout="erase()">
                                     <i class="fas fa-laptop"></i>
                                     Dart/Flutter
                                 </div>
                             </div>
                             <div class="fv">
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('At 9th year of studying at school my father became interested in fotoshop. He downloaded it on my computer and asked me to try it. I dedicated myself completely because I loved it at first sight. In a month I learn all basic tools and could make absolutely everything I want to. In a year I\'ve self studied many usefull and complex features. At 10th form I got my the very first freelance order for business card design. The problem was that I had to make ready to print layout. I\'ve completely done it in photoshop but that wasn\'t enogh. I went to the different printing centers in Kyiv to know what to do next. Only one print center satisfied the requirements. And even one of its designers explained me what I need to do and what tools to use at Illustrator')"
+                                    onmouseout="erase()">
                                     <i class="far fa-images"></i>
                                     Adobe Photoshop/Illustrator
                                 </div>
-                                <div class="icon__wrapper">
+                                <div class="icon__wrapper"
+                                    onmouseover="describe('I had to learn these databases due to my orders. I can\'t say that I know them perfectly but I confidently operate with basics')"
+                                    onmouseout="erase()">
                                     <i class="fas fa-database"></i>
                                     Mongodb/MySQL
                                 </div>
                             </div>
                         </div>
                         <div class="skills__info-for-skill skills__info-for-skill-margin">
-                            <p class="skills__text">Placeholder</p>
+                            <p class="skills__text" id="skillsDescription"></p>
+
                         </div>
                     </div>
                 </div>
+
             </div>
 
 
